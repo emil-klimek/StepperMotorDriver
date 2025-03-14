@@ -1,2 +1,2 @@
-# stm32StepperMotor
+#StepperMotor
 Kod źródłowy do pracy inżynierskiej
