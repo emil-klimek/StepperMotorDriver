@@ -1,4 +1,0 @@
-../Core/Src/file.cpp:55:17:void L6474_create()	2
-../Core/Src/file.cpp:69:6:void flag_irq_handler()	2
-../Core/Src/file.cpp:90:17:void L6474_move()	1
-../Core/Src/file.cpp:118:17:void L6474_run()	1

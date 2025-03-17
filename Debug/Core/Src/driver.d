@@ -1,4 +1,4 @@
-Core/Src/file.o: ../Core/Src/file.cpp ../Core/Inc/Common/Component.h \
+Core/Src/driver.o: ../Core/Src/driver.cpp ../Core/Inc/Common/Component.h \
  ../Core/Inc/Actuators/StepperMotor.h ../Core/Inc/Common/Component.h \
  ../Core/Inc/L6474/L6474_config.h ../Core/Inc/L6474/L6474_def.h \
  ../Core/Inc/L6474/L6474_config.h ../Core/Inc/L6474/../Common/motor_def.h \

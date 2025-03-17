@@ -1,0 +1,4 @@
+../Core/Src/driver.cpp:55:17:void L6474_create()	16	static
+../Core/Src/driver.cpp:69:6:void flag_irq_handler()	16	static
+../Core/Src/driver.cpp:90:17:void L6474_move()	8	static
+../Core/Src/driver.cpp:114:17:void L6474_run()	8	static

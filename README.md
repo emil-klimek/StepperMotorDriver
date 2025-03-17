@@ -1,2 +1,2 @@
-# Sterownik silnika krokowego z interfejsem Ethernet
+# stm32StepperMotor
 Kod źródłowy do pracy inżynierskiej

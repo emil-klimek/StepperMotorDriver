@@ -1,3 +1,4 @@
-../Core/Src/Pwm.cpp:13:1:Pwm::Pwm()	2
-../Core/Src/Pwm.cpp:32:6:void Pwm::write(float)	2
-../Core/Src/Pwm.cpp:43:6:void Pwm::period(float)	2
+../Core/Src/Pwm.cpp:14:5:int prescaler(float)	1
+../Core/Src/Pwm.cpp:19:1:Pwm::Pwm()	2
+../Core/Src/Pwm.cpp:38:6:void Pwm::write(float)	2
+../Core/Src/Pwm.cpp:49:6:void Pwm::period(float)	2

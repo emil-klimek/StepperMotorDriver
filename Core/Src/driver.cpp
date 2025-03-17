@@ -89,38 +89,34 @@ int diff = 0;
 
 extern "C" void L6474_move()
 {
-
-    /* Attaching and enabling interrupt handlers. */
     motor->attach_flag_irq(&flag_irq_handler);
     motor->enable_flag_irq();
 
-    motor->set_parameter(L6474_TVAL, 500);
+     motor->set_parameter(L6474_TVAL, 500);
 
 
+     position = motor->get_position();
 
-    position = motor->get_position();
+     motor->move(StepperMotor::FWD, STEPS_1 / 8);
+     motor->wait_while_active();
 
-    motor->move(StepperMotor::FWD, STEPS_1 / 8);
-    motor->wait_while_active();
+     diff = motor->get_position() - position;
+     position = motor->get_position();
 
-    diff = motor->get_position() - position;
-    position = motor->get_position();
+     //motor->move(StepperMotor::BWD, STEPS_1 / 8);
+     //motor->wait_while_active();
+     //position = motor->get_position();
 
-    //motor->move(StepperMotor::BWD, STEPS_1 / 8);
-    //motor->wait_while_active();
-    //position = motor->get_position();
-
-    motor->set_max_speed(10000);
-    motor->set_min_speed(8000);
-
+     motor->set_max_speed(10000);
+     motor->set_min_speed(5000);
 }
 
 extern "C" void L6474_run()
 {
-	 while(true)
-	 {
-		 motor->move(StepperMotor::FWD, STEPS_1 / 8);
-		 motor->wait_while_active();
-	 }
+    while (true) {
+        position = position + diff;
+        motor->go_to(position);
+        motor->wait_while_active();
+    }
 }
 
