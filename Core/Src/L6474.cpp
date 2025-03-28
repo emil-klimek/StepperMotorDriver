@@ -1135,8 +1135,7 @@ float L6474::L6474_Par_to_Tmin_Time(float Tmin)
   return ((float)(((Tmin - 0.5f) / 2.0f) + 0.5f));
 }
 
-//AL_SPI_Receive_DMA(&hspi1, RX_Buffer, 1); //Receiving in DMA mode
-//HAL_Delay(100);
+
 status_t L6474::Read(uint8_t* pBuffer, uint16_t NumBytesToRead)
 {
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
@@ -1198,11 +1197,14 @@ status_t L6474::ReadWrite(uint8_t* pBufferToRead, uint8_t* pBufferToWrite, uint1
 
 }
 
+
+
+
 void L6474::L6474_PwmSetFreq(uint16_t frequency)
 {
     /* Computing the period of PWM. */
     double period = 1.0f / frequency;
-    printf("frequency: %i, period: %f\n", frequency, period);
+    //printf("frequency: %i, period: %f\n", frequency, period);
 
     /* Setting the period and the duty-cycle of PWM. */
     pwm.period(period);

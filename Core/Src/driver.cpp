@@ -51,21 +51,6 @@ L6474_init_t init = {
 
 L6474 *motor;
 
-
-extern "C" void L6474_create()
-{
-	motor = new L6474;
-	if(motor->init(&init) != COMPONENT_OK)
-	{
-		printf("failed to initialize\r\n");
-	}
-	else
-	{
-		printf("ok\r\n");
-	}
-
-}
-
 void flag_irq_handler(void)
 {
     /* Set ISR flag. */
@@ -84,9 +69,27 @@ void flag_irq_handler(void)
     motor->isr_flag = FALSE;
 }
 
+extern "C" void L6474_create()
+{
+	motor = new L6474;
+	if(motor->init(&init) != COMPONENT_OK)
+	{
+		printf("failed to initialize\r\n");
+	}
+	else
+	{
+		printf("ok\r\n");
+	}
+
+	motor->attach_flag_irq(&flag_irq_handler);
+	motor->enable_flag_irq();
+}
+
+
+
 int position = 0;
 int diff = 0;
-
+int speed = 1000;
 extern "C" void L6474_move()
 {
     motor->attach_flag_irq(&flag_irq_handler);
@@ -108,15 +111,40 @@ extern "C" void L6474_move()
      //position = motor->get_position();
 
      motor->set_max_speed(10000);
-     motor->set_min_speed(5000);
+     motor->set_min_speed(1000);
 }
+
+
 
 extern "C" void L6474_run()
 {
-    while (true) {
-        position = position + diff;
-        motor->go_to(position);
-        motor->wait_while_active();
-    }
+
+	motor->set_max_speed(20000);
+
+	speed = 1000;
+	float s = 1;
+	const float min = 5000, max = 9000;
+
+	while(true)
+	{
+		for(int i =0; i<10;++i) {
+			motor->move(StepperMotor::FWD, STEPS_1 / 8);
+			motor->wait_while_active();
+		}
+
+		if(speed == min)
+		{
+			s = 1;
+		}
+		else if(speed == max)
+		{
+			s = -1;
+		}
+
+		speed = speed + 1000 * s;
+		motor->set_min_speed(speed);
+		printf("speed: %i\r\n", speed);
+	}
+
 }
 

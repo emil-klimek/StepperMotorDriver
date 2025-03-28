@@ -104,11 +104,11 @@
 ../Core/Src/L6474.cpp:1123:7:float L6474::L6474_Par_to_Tval_Current(float)	16	static
 ../Core/Src/L6474.cpp:1128:7:float L6474::L6474_Tmin_Time_to_Par(float)	16	static
 ../Core/Src/L6474.cpp:1133:7:float L6474::L6474_Par_to_Tmin_Time(float)	16	static
-../Core/Src/L6474.cpp:1140:10:status_t L6474::Read(uint8_t*, uint16_t)	32	static
-../Core/Src/L6474.cpp:1155:10:status_t L6474::Write(uint8_t*, uint16_t)	32	static
-../Core/Src/L6474.cpp:1171:10:status_t L6474::ReadWrite(uint8_t*, uint8_t*, uint16_t)	40	static
-../Core/Src/L6474.cpp:1217:26:L6474::L6474_PwmSetFreq(uint16_t)::<lambda(void*)>	16	static
-../Core/Src/L6474.cpp:1217:26:static void L6474::L6474_PwmSetFreq(uint16_t)::<lambda(void*)>::_FUN(void*)	16	static
-../Core/Src/L6474.cpp:1217:26:L6474::L6474_PwmSetFreq(uint16_t)::<lambda(void*)>::operator void (*)(void*)() const	16	static
-../Core/Src/L6474.cpp:1201:6:void L6474::L6474_PwmSetFreq(uint16_t)	40	static
-../Core/Src/L6474.cpp:1224:6:void L6474::L6474_PwmStop()	16	static
+../Core/Src/L6474.cpp:1139:10:status_t L6474::Read(uint8_t*, uint16_t)	32	static
+../Core/Src/L6474.cpp:1154:10:status_t L6474::Write(uint8_t*, uint16_t)	32	static
+../Core/Src/L6474.cpp:1170:10:status_t L6474::ReadWrite(uint8_t*, uint8_t*, uint16_t)	40	static
+../Core/Src/L6474.cpp:1219:26:L6474::L6474_PwmSetFreq(uint16_t)::<lambda(void*)>	16	static
+../Core/Src/L6474.cpp:1219:26:static void L6474::L6474_PwmSetFreq(uint16_t)::<lambda(void*)>::_FUN(void*)	16	static
+../Core/Src/L6474.cpp:1219:26:L6474::L6474_PwmSetFreq(uint16_t)::<lambda(void*)>::operator void (*)(void*)() const	16	static
+../Core/Src/L6474.cpp:1203:6:void L6474::L6474_PwmSetFreq(uint16_t)	40	static
+../Core/Src/L6474.cpp:1226:6:void L6474::L6474_PwmStop()	16	static
