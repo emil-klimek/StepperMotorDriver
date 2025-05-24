@@ -1,4 +1,0 @@
-.vscode/
-build/
-inc/stm32*_hal_conf.h
-stm32-env.ps1
