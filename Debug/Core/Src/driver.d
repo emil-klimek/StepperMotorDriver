@@ -29,7 +29,13 @@ Core/Src/driver.o: ../Core/Src/driver.cpp ../Core/Inc/Common/Component.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Core/Inc/L6474/Pwm.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../Core/Inc/L6474/Pwm.h ../Core/Inc/ENC28J60/EtherShield.h \
+ ../Core/Inc/ENC28J60/stm32includes.h ../Core/Inc/ENC28J60/defines.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+ ../Core/Inc/ENC28J60/enc28j60.h ../Core/Inc/ENC28J60/ip_arp_udp_tcp.h \
+ ../Core/Inc/ENC28J60/net.h
 ../Core/Inc/Common/Component.h:
 ../Core/Inc/Actuators/StepperMotor.h:
 ../Core/Inc/Common/Component.h:
@@ -66,4 +72,13 @@ Core/Src/driver.o: ../Core/Src/driver.cpp ../Core/Inc/Common/Component.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 ../Core/Inc/L6474/Pwm.h:
+../Core/Inc/ENC28J60/EtherShield.h:
+../Core/Inc/ENC28J60/stm32includes.h:
+../Core/Inc/ENC28J60/defines.h:
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:
+../Core/Inc/ENC28J60/enc28j60.h:
+../Core/Inc/ENC28J60/ip_arp_udp_tcp.h:
+../Core/Inc/ENC28J60/net.h:

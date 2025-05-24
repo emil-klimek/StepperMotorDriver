@@ -1,0 +1,18 @@
+../Core/Inc/ENC28J60/Enc28j60.h:48:5:ENC28J60::ENC28J60()	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:38:19:virtual uint32_t ENC28J60_EMAC::get_mtu_size() const	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:41:19:virtual uint32_t ENC28J60_EMAC::get_align_preference() const	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:44:15:virtual void ENC28J60_EMAC::get_ifname(char*, uint8_t)	24	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:47:18:virtual uint8_t ENC28J60_EMAC::get_hwaddr_size() const	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:50:15:virtual bool ENC28J60_EMAC::get_hwaddr(uint8_t*) const	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:53:15:virtual void ENC28J60_EMAC::set_hwaddr(const uint8_t*)	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:56:15:virtual bool ENC28J60_EMAC::link_out(emac_mem_buf_t*)	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:59:15:virtual bool ENC28J60_EMAC::power_up()	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:62:15:virtual void ENC28J60_EMAC::power_down()	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:65:15:virtual void ENC28J60_EMAC::set_link_input_cb(emac_link_input_cb_t)	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:68:15:virtual void ENC28J60_EMAC::set_link_state_cb(emac_link_state_change_cb_t)	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:71:15:virtual void ENC28J60_EMAC::add_multicast_group(const uint8_t*)	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:74:15:virtual void ENC28J60_EMAC::remove_multicast_group(const uint8_t*)	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:77:15:virtual void ENC28J60_EMAC::set_all_multicast(bool)	16	static
+../Core/Inc/ENC28J60/Enc28j60Emac.h:80:15:virtual void ENC28J60_EMAC::set_memory_manager()	16	static
+../Core/Src/Enc28j60Emac.cpp:10:1:ENC28J60_EMAC::ENC28J60_EMAC()	24	static
+../Core/Src/Enc28j60Emac.cpp:19:17:emac_mem_buf_t* ENC28J60_EMAC::low_level_input()	32	static

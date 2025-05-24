@@ -30,6 +30,7 @@
 #include <sys/time.h>
 #include <sys/times.h>
 
+/*
 #define DEMCR           *((volatile uint32_t*) 0xE000EDFCU)
 
 #define ITM_STIMULUS_PORT0  *((volatile uint32_t*) 0xE0000000)
@@ -47,6 +48,7 @@ void ITM_SendChar(uint8_t ch)
 
     ITM_STIMULUS_PORT0 = ch;
 }
+*/
 
 /* Variables */
 extern int __io_putchar(int ch) __attribute__((weak));
@@ -94,7 +96,7 @@ __attribute__((weak)) int _read(int file, char *ptr, int len)
   return len;
 }
 
-/*
+
 __attribute__((weak)) int _write(int file, char *ptr, int len)
 {
   (void)file;
@@ -106,14 +108,7 @@ __attribute__((weak)) int _write(int file, char *ptr, int len)
   }
   return len;
 }
-*/
 
-int _write(int file, char *ptr, int len) {
-    for (int i = 0; i < len; i++) {
-        ITM_SendChar(*ptr++);
-    }
-    return len;
-}
 
 int _close(int file)
 {

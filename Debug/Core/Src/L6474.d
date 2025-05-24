@@ -29,6 +29,7 @@ Core/Src/L6474.o: ../Core/Src/L6474.cpp ../Core/Inc/Common/Component.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Core/Inc/L6474/Pwm.h ../Core/Inc/L6474/IrqHandlers.h
 ../Core/Inc/Common/Component.h:
 ../Core/Inc/Actuators/StepperMotor.h:
@@ -66,5 +67,6 @@ Core/Src/L6474.o: ../Core/Src/L6474.cpp ../Core/Inc/Common/Component.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 ../Core/Inc/L6474/Pwm.h:
 ../Core/Inc/L6474/IrqHandlers.h:

@@ -1,0 +1,8 @@
+../Core/Src/dhcp.c:94:13:addToBuf	16	static
+../Core/Src/dhcp.c:96:9:dhcp_state	16	static
+../Core/Src/dhcp.c:113:6:dhcp_start	32	static
+../Core/Src/dhcp.c:152:6:dhcp_request_ip	16	static
+../Core/Src/dhcp.c:158:6:dhcp_send	24	static
+../Core/Src/dhcp.c:250:9:check_for_dhcp_answer	24	static
+../Core/Src/dhcp.c:268:9:have_dhcpoffer	32	static
+../Core/Src/dhcp.c:304:9:have_dhcpack	16	static
